@@ -1,0 +1,4 @@
+class Icon : Image {
+  replace imageData with images: [Size: Image]
+  // Implement
+}

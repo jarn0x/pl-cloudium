@@ -1,0 +1,7 @@
+class Notification {
+  SimpleFormattedText = Text<disallowSizing, disallowFonts, disallowColors>
+  title: SimpleFormattedText
+  body: SimpleFormattedText | View
+  Icon
+  actions: [Button]
+}
