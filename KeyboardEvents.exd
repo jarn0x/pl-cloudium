@@ -1,0 +1,16 @@
+event Keystroke(Key) : Event {
+  Key
+}
+
+event KeyCombination(keys) : Event {
+  keys: Key[]
+}
+
+event KeySequence(sequence) : Event {
+  sequence: String
+  origin: Stream
+
+  initialize(withStream:origin, from:beginning, to:end) {
+    sequence = origin.subString(from:beginning, to:end)
+  }
+}
