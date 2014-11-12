@@ -1,0 +1,7 @@
+class Printer : OutputDevice {
+  print(document) {
+    document.convertToFormat(self.supportedFormats.sort {
+      $1.score > $2.score
+    })
+  }
+}
