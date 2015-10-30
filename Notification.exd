@@ -1,5 +1,5 @@
 class Notification {
-  SimpleFormattedText = Text<disallowSizing, disallowFonts, disallowColors>
+  SimpleFormattedText = FormattedText<disallowSizing, disallowFonts, disallowColors>
   title: SimpleFormattedText
   body: SimpleFormattedText | View
   Icon
